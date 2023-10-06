@@ -22,11 +22,11 @@
 
 \begin{lstlisting}[language=bash]
 
-/    #-> repertoire racine
-pwd  #-> repertoire courant
-..   #-> repertoire parent
-~    #-> repertoire maison
-cd   #-> change le repertoire
+/    # repertoire racine
+pwd  # repertoire courant
+..   # repertoire parent
+~    # repertoire maison
+cd   # change le repertoire
 
 \end{lstlisting}
 
@@ -34,15 +34,15 @@ cd   #-> change le repertoire
 
 \begin{lstlisting}[language=bash]
 
-ls                              #-> affiche les fichiers du repertoire courant
-ls -l                           #-> affiche les fichiers avec plus de details
-mkdir dossier                   #-> creer un dossier
-touch fichier                   #-> creer un fichier vide
-cp fichier1 dossier/fichier2    #-> copie le fichier1 dans un dossier sous le nom fichier2
-mv fichier1 dossier/            #-> deplace le fichier1 dans le dossier
-cat fichier                     #-> affiche le contenu du fichier
-rm fichier1 fichier2            #-> supprime les fichiers 1 et 2
-rm dossier -R                   #-> supprime un dossier recursivement
+ls                              # affiche les fichiers du repertoire courant
+ls -l                           # affiche les fichiers avec plus de details
+mkdir dossier                   # creer un dossier
+touch fichier                   # creer un fichier vide
+cp fichier1 dossier/fichier2    # copie le fichier1 dans un dossier sous le nom fichier2
+mv fichier1 dossier/            # deplace le fichier1 dans le dossier
+cat fichier                     # affiche le contenu du fichier
+rm fichier1 fichier2            # supprime les fichiers 1 et 2
+rm dossier -R                   # supprime un dossier recursivement
 
 \end{lstlisting}
 
@@ -54,8 +54,8 @@ Affiche les noms et descriptions des manuels en rapport.
 \begin{lstlisting}[language=bash]
 
 apropos <mot> <options>
-apropos mkdir #-> mkdir(1) ...., mkdir(2) ...., mkdirat(2) ....
-apropos printf #-> printf(1) ...., sprintf(1)..., eprintf(1) ....
+apropos mkdir  # mkdir(1) ...., mkdir(2) ...., mkdirat(2) ....
+apropos printf # printf(1) ...., sprintf(1)..., eprintf(1) ....
 
 \end{lstlisting}
 
@@ -64,7 +64,7 @@ Affiche la description des de la page du manuel de la commande cherché
 
 \begin{lstlisting}[language=bash]
 whatis <mot> <options>
-whatis cd   #-> donne la description de la commande cd.
+whatis cd   # donne la description de la commande cd.
 \end{lstlisting}
 
 \subsubsection{grep}
@@ -72,9 +72,9 @@ Permet la recherche de motifs dans un fichier ou dans plusieurs fichiers.
 
 \begin{lstlisting}[language=bash]
 
-grep bonjour fichier.txt                #-> affiche toute les lignes avec le mot bonjour
-grep bonjour fichier.txt --count        #-> compte le nombre de lignes avec le mot bonjour
-grep bonjour fichier.txt --invert-match #-> les lignes qui ne contiennent pas le mot bonjour
+grep bonjour fichier.txt                # affiche toute les lignes avec le mot bonjour
+grep bonjour fichier.txt --count        # compte le nombre de lignes avec le mot bonjour
+grep bonjour fichier.txt --invert-match # les lignes qui ne contiennent pas le mot bonjour
 
 \end{lstlisting}
 
@@ -84,7 +84,7 @@ Permet d'avoir une description du type d'un fichier donné en argument.
 
 \begin{lstlisting}[language=bash]
 
-file latex.tx  #-> latex.tex: LaTeX 2e document, Unicode text, UTF-8 text
+file latex.tx  # latex.tex: LaTeX 2e document, Unicode text, UTF-8 text
 
 \end{lstlisting}
 
