@@ -1,10 +1,9 @@
 \documentclass{article}
 
- \usepackage[margin=0.5in]{geometry}
+\usepackage[margin=0.3in]{geometry}
 \usepackage{amsmath}
 \usepackage{listings}
 \usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
 
 
 \author{Loïc Weber \& Thibault Gounant} 
@@ -19,15 +18,15 @@
 \renewcommand*\contentsname{Table des matières}
 \tableofcontents
 
-\section{TP1 : Unix}
+\section{TP1 : Unix, le système de fichier}
 
 \subsection{Manuel}
 \begin{lstlisting}[language=bash]
-man <commande>              # Afficher les pages du manuel correspondant à la commande
-whatis <commande>           # Afficher la description du manuel correspondant à la commande
-apropos <mot>               # Afficher les descriptions du manuel dont les pages contiennent le mot 
-history                     # Afficher l'historique des commandes
-alias <commande>=<expr>     # Créer une commande correspondant à une expression
+man <commande>          # Afficher les pages du manuel correspondant a la commande
+whatis <commande>       # Afficher la description du manuel correspondant a la commande
+apropos <mot>           # Afficher les descriptions du manuel dont les pages contienent le mot 
+history                 # Afficher l'historique des commandes
+alias <commande>=<expr> # Creer une commande correspondant a une expression
 \end{lstlisting}
 
 \subsection{Hierarchie}
@@ -47,7 +46,7 @@ cd <dossier>    # Changer de dossier
 \begin{lstlisting}[language=bash]
 file <fichier>  # Afficher une description du type du fichier
 cat <fichier>   # Afficher le contenu du fichier
-sort <fichier>  # Afficher le contenu du fichier trié
+sort <fichier>  # Afficher le contenu du fichier trie
 more <fichier>  # Visualiser le contenu du fichier par le haut
 less <fichier>  # Visualiser le contenu du fichier par le bas
 \end{lstlisting}
@@ -55,19 +54,34 @@ less <fichier>  # Visualiser le contenu du fichier par le bas
 \subsection{Gestion}
 \begin{lstlisting}[language=bash]
 chmod <droit> <fichier>     # Changer les droits du fichier
-mkdir <dossier>             # Créer le dossier
+mkdir <dossier>             # Creer le dossier
 rmdir <dossier>             # Supprimer le dossier vide
-touch <fichier>             # Créer le fichier
+touch <fichier>             # Creer le fichier
 rm <fichier>                # Supprimer le fichier
 cp <fichier> <dossier>      # Copier le fichier dans le dossier
-mv <fichier> <dossier>      # Déplacer le fichier dans le dossier
-ln <fichier1> <fichier2>    # Créer un raccourci fichier1 vers le fichier2 
+mv <fichier> <dossier>      # Deplacer le fichier dans le dossier
+ln <fichier1> <fichier2>    # Creer un raccourci fichier1 vers le fichier2 
 \end{lstlisting}
 
 \subsection{Recherche}
 \begin{lstlisting}[language=bash]
 find <expr>             # Rechercher un fichier
 grep <expr> <fichier>   # Rechercher une expression dans le fichier
+\end{lstlisting}
+
+\section{TP2 : Commandes utilisateur Unix}
+
+\subsection{Droits des fichiers}
+
+Unix attribue à tous les fichiers deux choses :
+
+\begin{itemize}
+  \item Un créateur et un groupe.
+  \item Une liste de droits pour le créateur, le groupe et pour tous les autres
+\end{itemize}
+
+\begin{lstlisting}[language=Unix]
+drwxr-xr-x 17 justalternate root           4096 Aug  2 18:37 Projects
 \end{lstlisting}
 
 \end{document}
