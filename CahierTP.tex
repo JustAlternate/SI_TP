@@ -21,7 +21,7 @@
 \section{TP1 : Unix, le système de fichier}
 
 \subsection{Manuel}
-\begin{lstlisting}[language=bash]
+\begin{lstlisting}
 man <commande>          # Afficher les pages du manuel correspondant a la commande
 whatis <commande>       # Afficher la description du manuel correspondant a la commande
 apropos <mot>           # Afficher les descriptions du manuel dont les pages contienent le mot 
@@ -30,20 +30,20 @@ alias <commande>=<expr> # Creer une commande correspondant a une expression
 \end{lstlisting}
 
 \subsection{Hierarchie}
-\begin{lstlisting}[language=bash]
+\begin{lstlisting}
 /    # repertoire racine
 ..   # repertoire parent
 ~    # repertoire maison
 \end{lstlisting}
 
-\begin{lstlisting}[language=bash]
+\begin{lstlisting}
 ls <dossier>    # Afficher le contenu du dossier
 pwd             # Afficher le chemin absolu du dossier courant
 cd <dossier>    # Changer de dossier
 \end{lstlisting}
 
 \subsection{Affichage}
-\begin{lstlisting}[language=bash]
+\begin{lstlisting}
 file <fichier>  # Afficher une description du type du fichier
 cat <fichier>   # Afficher le contenu du fichier
 sort <fichier>  # Afficher le contenu du fichier trie
@@ -52,7 +52,7 @@ less <fichier>  # Visualiser le contenu du fichier par le bas
 \end{lstlisting}
 
 \subsection{Gestion}
-\begin{lstlisting}[language=bash]
+\begin{lstlisting}
 chmod <droit> <fichier>     # Changer les droits du fichier
 mkdir <dossier>             # Creer le dossier
 rmdir <dossier>             # Supprimer le dossier vide
@@ -64,7 +64,7 @@ ln <fichier1> <fichier2>    # Creer un raccourci fichier1 vers le fichier2
 \end{lstlisting}
 
 \subsection{Recherche}
-\begin{lstlisting}[language=bash]
+\begin{lstlisting}
 find <expr>             # Rechercher un fichier
 grep <expr> <fichier>   # Rechercher une expression dans le fichier
 \end{lstlisting}
@@ -80,7 +80,8 @@ Unix attribue à tous les fichiers deux choses :
   \item Une liste de droits pour le créateur, le groupe et pour tous les autres
 \end{itemize}
 
-\begin{lstlisting}[language=Unix]
+Exemple de droit pour le dossier "Projects" visible avec la commande "ls -l" : 
+\begin{lstlisting}
 drwxr-xr-x 17 justalternate root           4096 Aug  2 18:37 Projects
 \end{lstlisting}
 
