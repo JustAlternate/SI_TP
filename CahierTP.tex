@@ -84,5 +84,31 @@ Exemple de droit pour le dossier "Projects" visible avec la commande "ls -l" :
 \begin{lstlisting}
 drwxr-xr-x 17 justalternate root           4096 Aug  2 18:37 Projects
 \end{lstlisting}
+Les 10 premiers caractères représente :
+\begin{itemize}
+  \item Le type de fichier (d = directory, - = regular file, l = symbolic link, p = pipe, s = socket ..)
+  \item Les 3 premiers droits créateur (rwx = tous les droits)
+  \item 3 droits du groupe (r-x)
+  \item 3 droits pour tous les autres (r-x)
+  \item le créateur (justalternate)
+  \item le groupe associé (root)
+\end{itemize}
+
+Afin de modifier les droits d'un fichier, on peut d'abord agir sur les droits créateur, groupe et autre :
+
+\begin{lstlisting}
+chmod +x fichier    # Donne a tous les utilisateurs la permission d'execution
+chmod u+r fichier   # Donne au proprietaire la permission de lecture
+chmod g+w fichier   # Donne au groupe la permission d'ecriture
+chmod o+x fichier   # Donne a autre la permission d'execution
+\end{lstlisting}
+
+On peut ensuite modifier le groupe ou bien le créateur :
+
+\begin{lstlisting}
+chgrp IDIA2026 Systeme_Info # Change le groupe du fichier "Systeme_Info" en "IDIA2026"
+chown IDIA2026 Systeme_Info # Change le createur du fichier "Systeme_Info" en "IDIA2026"
+\end{lstlisting}
+
 
 \end{document}
