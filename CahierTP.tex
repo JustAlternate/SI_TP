@@ -31,15 +31,16 @@ alias <commande>=<expr> # Creer une commande correspondant a une expression
 
 \subsection{Hierarchie}
 \begin{lstlisting}
-/    # repertoire racine
-..   # repertoire parent
-~    # repertoire maison
+/    # Repertoire racine
+..   # Repertoire parent
+~    # Repertoire maison
 \end{lstlisting}
 
 \begin{lstlisting}
 ls <dossier>    # Afficher le contenu du dossier
 pwd             # Afficher le chemin absolu du dossier courant
 cd <dossier>    # Changer de dossier
+tree            # Afficher l'arborescence de repertoires
 \end{lstlisting}
 
 \subsection{Affichage}
@@ -53,7 +54,6 @@ less <fichier>  # Visualiser le contenu du fichier par le bas
 
 \subsection{Gestion}
 \begin{lstlisting}
-chmod <droit> <fichier>     # Changer les droits du fichier
 mkdir <dossier>             # Creer le dossier
 rmdir <dossier>             # Supprimer le dossier vide
 touch <fichier>             # Creer le fichier
@@ -63,15 +63,11 @@ mv <fichier> <dossier>      # Deplacer le fichier dans le dossier
 ln <fichier1> <fichier2>    # Creer un raccourci fichier1 vers le fichier2 
 \end{lstlisting}
 
-\subsection{Recherche}
-\begin{lstlisting}
-find <expr>             # Rechercher un fichier
-grep <expr> <fichier>   # Rechercher une expression dans le fichier
-\end{lstlisting}
-
 \section{TP2 : Commandes utilisateur Unix}
 
 \subsection{Droits des fichiers}
+
+chmod <droit> <fichier>     # Changer les droits du fichier
 
 Unix attribue à tous les fichiers deux choses :
 
@@ -110,5 +106,15 @@ chgrp IDIA2026 Systeme_Info # Change le groupe du fichier "Systeme_Info" en "IDI
 chown IDIA2026 Systeme_Info # Change le createur du fichier "Systeme_Info" en "IDIA2026"
 \end{lstlisting}
 
+\subsection{Systeme}
+\begin{lstlisting}
+df <fichier>    # Occupation disque du fichier
+mount           # TODO
+
+\subsection{Recherche}
+\begin{lstlisting}
+find <expr>             # Rechercher un fichier
+grep <expr> <fichier>   # Rechercher une expression dans le fichier
+\end{lstlisting}
 
 \end{document}
