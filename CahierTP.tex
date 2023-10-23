@@ -99,7 +99,7 @@ chmod +x fichier    # Donne a tous les utilisateurs la permission d'execution
 chmod u+r fichier   # Donne au proprietaire la permission de lecture
 chmod g+w fichier   # Donne au groupe la permission d'ecriture
 chmod o+x fichier   # Donne a autre la permission d'execution
-chmod a-r fichier   # Enleve a tous les permissions de lecture
+chmod a-r fichier   # Enleve a tous (u,g,o) les permissions de lecture
 chmod u+s fichier   # Donne les memes droits que le proprietaire a l'utilisateur
 chmod o+t fichier   # Seul le proprietaire a la permission d'execution
 \end{lstlisting}
@@ -112,9 +112,13 @@ chown IDIA2026 Systeme_Info # Change le createur du fichier "Systeme_Info" en "I
 \end{lstlisting}
 
 \subsection{Système}
+\begin{itemize}
+  \item /etc/fstab : liste les montages disponibles
+  \item /etc/mtab : liste les points actuellements montés
+\end{itemize}
 \begin{lstlisting}
 df <fichier>    # Occupation disque du fichier
-mount           # TODO
+mount           # Monte un systeme de fichiers dans un repertoire de l'arborescence
 \end{lstlisting}
 
 \subsection{Redirection}
