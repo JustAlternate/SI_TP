@@ -67,13 +67,15 @@ ln <fichier1> <fichier2>    # Creer un raccourci fichier1 vers le fichier2
 
 \subsection{Droits des fichiers}
 
-chmod <droit> <fichier>     # Changer les droits du fichier
+\begin{lstlisting}
+chmod <droit> <fichier>   # Changer les droits du fichier
+\end{lstlisting}
 
 Unix attribue à tous les fichiers deux choses :
 
 \begin{itemize}
   \item Un créateur et un groupe.
-  \item Une liste de droits pour le créateur, le groupe et pour tous les autres
+  \item Une liste de droits pour le créateur, le groupe et pour tous les autres (les triplets)
 \end{itemize}
 
 Exemple de droit pour le dossier "Projects" visible avec la commande "ls -l" : 
@@ -106,15 +108,41 @@ chgrp IDIA2026 Systeme_Info # Change le groupe du fichier "Systeme_Info" en "IDI
 chown IDIA2026 Systeme_Info # Change le createur du fichier "Systeme_Info" en "IDIA2026"
 \end{lstlisting}
 
-\subsection{Systeme}
+\subsection{Système}
 \begin{lstlisting}
 df <fichier>    # Occupation disque du fichier
 mount           # TODO
+\end{lstlisting}
+
+\subsection{Redirection}
+Dans Unix, on peut rediriger la sortie d'une commande dans un fichier ou bien utiliser un fichier en tant qu'arguments pour une commande.
+\begin{lstlisting}
+ls > listefichiers.txt
+\end{lstlisting}
+
+Cette commande créer (ou écrase) le fichier "listefichiers.txt" avec le résultat de la commande "ls".
+
+D'autres types de redirection :
+
+\begin{itemize}
+  \item $>>$  \# Permet d'ajouter à la fin (append)
+  \item $<$ \# Permet d'utiliser le contenu d'un fichier pour exécuter la commande.
+  \item $2>\&1$ \# Permet d'ajouter les potentielles erreurs de la commande dans le fichier
+\end{itemize}
 
 \subsection{Recherche}
 \begin{lstlisting}
 find <expr>             # Rechercher un fichier
 grep <expr> <fichier>   # Rechercher une expression dans le fichier
 \end{lstlisting}
+
+
+
+
+
+
+
+
+
 
 \end{document}
