@@ -99,6 +99,9 @@ chmod +x fichier    # Donne a tous les utilisateurs la permission d'execution
 chmod u+r fichier   # Donne au proprietaire la permission de lecture
 chmod g+w fichier   # Donne au groupe la permission d'ecriture
 chmod o+x fichier   # Donne a autre la permission d'execution
+chmod a-r fichier   # Enleve a tous les permissions de lecture
+chmod u+s fichier   # Donne les memes droits que le proprietaire a l'utilisateur
+chmod o+t fichier   # Seul le proprietaire a la permission d'execution
 \end{lstlisting}
 
 On peut ensuite modifier le groupe ou bien le créateur :
@@ -135,14 +138,6 @@ D'autres types de redirection :
 find <expr>             # Rechercher un fichier
 grep <expr> <fichier>   # Rechercher une expression dans le fichier
 \end{lstlisting}
-
-
-
-
-
-
-
-
 
 
 \end{document}
