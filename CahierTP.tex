@@ -154,10 +154,10 @@ grep <expr> <fichier>   # Rechercher une expression dans le fichier
 
 \subsection{Traitement des fichiers}
 \begin{lstlisting}
-  head <fichier>    # Premieres lignes d’un fichier
-  tail <fichier>    # Dernieres lignes d’un fichier
-  split <fichier>   # Fractionnement d’un fichier en plusieurs
-  cut <fichier>     # Fractionnement vertical d’un fichier  
+  head <fichier>    # Premieres lignes du fichier
+  tail <fichier>    # Dernieres lignes du fichier
+  split <fichier>   # Fractionnement du fichier en plusieurs
+  cut <fichier>     # Fractionnement vertical du fichier  
 \end{lstlisting}
 
 sed
@@ -184,19 +184,19 @@ echo hello | tr heo abc #-> abllc
 \end{lstlisting}
 
 diff
-Permet de comparer deux fichiers lignes par lignes et d'afficher les lignes differentes.
+Permet de comparer deux fichiers lignes par lignes et d'afficher les lignes différentes.
 \begin{lstlisting}
 diff fichier1 fichier2
 \end{lstlisting}
 
 uniq
-Permet de ne pas tenir compte des repetitions.
+Permet de ne pas tenir compte des répétitions.
 \begin{lstlisting}
 uniq fichier
 \end{lstlisting}
 
 comm
-Permet de comparer deux fichiers triee ligne par ligne et de montrer lignes communes.
+Permet de comparer deux fichiers triés ligne par ligne et d'afficher les lignes communes.
 \begin{lstlisting}
 comm fichier1 fichier2
 \end{lstlisting}
