@@ -4,6 +4,7 @@
 \usepackage{amsmath}
 \usepackage{listings}
 \usepackage[utf8]{inputenc}
+\usepackage{graphicx}
 
 
 \author{Loïc Weber \& Thibault Gounant} 
@@ -132,14 +133,14 @@ Cette commande créer (ou écrase) le fichier "listefichiers.txt" avec le résul
 D'autres types de redirection :
 
 \begin{itemize}
-  \item $>>$  \# Permet d'ajouter à la fin (append)
-  \item $<$ \# Permet d'utiliser le contenu d'un fichier pour exécuter la commande.
+  \item $>>$    \# Permet d'ajouter à la fin (append)
+  \item $<$    \# Permet d'utiliser le contenu d'un fichier pour exécuter la commande.
   \item $2>\&1$ \# Permet d'ajouter les potentielles erreurs de la commande dans le fichier
 \end{itemize}
 
 Le pipe 
 \begin{lstlisting}
-<commande1> '|' <commande2>
+<commande1> | <commande2>
 \end{lstlisting}
  la sortie de la première commande devient l'entrée de la deuxième commande
 
@@ -148,6 +149,8 @@ Le pipe
 find <expr>             # Rechercher un fichier
 grep <expr> <fichier>   # Rechercher une expression dans le fichier
 \end{lstlisting}
+
+
 
 
 \end{document}
