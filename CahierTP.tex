@@ -150,7 +150,20 @@ find <expr>             # Rechercher un fichier
 grep <expr> <fichier>   # Rechercher une expression dans le fichier
 \end{lstlisting}
 
+\subsection{Autre}
 
+sed
+Permet de remplacer des occurences de mots dans un fichier.
+\begin{lstlisting}
+sed 's/Hello/Bonjour/g' fichier.txt #-> remplace 'Hello' par 'Bonjour' dans le fichier.txt
+\end{lstlisting}
 
+tr
+Permet de remplacer a petite echelle.
+
+\begin{lstlisting}
+echo toto | tr o a      #-> tata
+echo hello | tr heo abc #-> abllc
+\end{lstlisting}
 
 \end{document}
