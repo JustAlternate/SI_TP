@@ -154,10 +154,10 @@ grep <expr> <fichier>   # Rechercher une expression dans le fichier
 
 \subsection{Traitement des fichiers}
 \begin{lstlisting}
-  head <fichier>    # premières lignes d’un fichier
-  tail <fichier>    # dernières lignes d’un fichier
-  split <fichier>   # fractionnement d’un fichier en plusieurs
-  cut <fichier>     # fractionnement vertical d’un fichier  
+  head <fichier>    # Premieres lignes d’un fichier
+  tail <fichier>    # Dernieres lignes d’un fichier
+  split <fichier>   # Fractionnement d’un fichier en plusieurs
+  cut <fichier>     # Fractionnement vertical d’un fichier  
 \end{lstlisting}
 
 sed
@@ -172,6 +172,15 @@ Permet de remplacer a petite echelle.
 \begin{lstlisting}
 echo toto | tr o a      #-> tata
 echo hello | tr heo abc #-> abllc
+\end{lstlisting}
+
+\subsection{Compression et archivage}
+\begin{lstlisting}
+  gzip <fichier>    # Compression du fichier
+  gunzip <fichier>  # Decompression du fichier
+  zip <fichier>     # Compression et archivage du fichier
+  unzip <fichier>   # Extraction du contenu
+  tar <fichiers>    # Archivage des fichiers
 \end{lstlisting}
 
 \end{document}
