@@ -26,7 +26,7 @@
 \begin{minted}{bash}
 man <commande>          # Afficher les pages du manuel correspondant à la commande
 whatis <commande>       # Afficher la description du manuel correspondant à la commande
-apropos <mot>           # Afficher les descriptions du manuel dont les pages contienent le mot 
+apropos <mot>           # Afficher les descriptions du manuel dont les pages contiennent le mot 
 history                 # Afficher l'historique des commandes
 alias <commande>=<expr> # Créer une commande correspondant à une expression
 \end{minted}
@@ -177,9 +177,9 @@ echo hello | tr heo abc #-> abllc
 
 \subsection{Compression et archivage}
 \begin{minted}{bash}
-  gzip <fichier>    # Compréssion du fichier
-  gunzip <fichier>  # Decompréssion du fichier
-  zip <fichier>     # Compréssion et archivage du fichier
+  gzip <fichier>    # Compression du fichier
+  gunzip <fichier>  # Decompression du fichier
+  zip <fichier>     # Compression et archivage du fichier
   unzip <fichier>   # Extraction du contenu
   tar <fichiers>    # Archivage des fichiers
 \end{minted}
@@ -218,8 +218,8 @@ $1 # arg1
 $2 # arg2
 
 $# # le nombre d'arguments
-$@ # tout les arguments sous la forme de liste
-$* # tout les arguments sous la forme d'une chaîne de caractere
+$@ # tous les arguments sous la forme de liste
+$* # tous les arguments sous la forme d'une chaîne de caractere
 
 $0 # le nom du script (avec le ./)
 $? # 1 si la commande précédente a fait une erreur sinon 0
@@ -228,12 +228,12 @@ $? # 1 si la commande précédente a fait une erreur sinon 0
 Pour créer une variable ont fait :
 
 \begin{minted}{bash}
-ma_var=1 # Attention a bien coller 'ma_var' au '=' sinon ça ne marche pas.
+ma_var=1 # Attention à bien coller 'ma_var' au '=' sinon ça ne marche pas.
 mon_entier=-4
 mon_string="chaine de caractère"
 \end{minted}
 
-Pour utiliser une variable déjà définit, on mettra systématiquement un \$ ou bien, on encapsulera la variable demandée par des \`{} \`{}
+Pour utiliser une variable déjà définie, on mettra systématiquement un \$ ou bien, on encapsulera la variable demandée par des \`{} \`{}
 
 \begin{minted}{bash}
 echo $ma_var  #-> affiche 1
