@@ -24,11 +24,11 @@
 
 \subsection{Manuel}
 \begin{minted}{bash}
-man <commande>          # Afficher les pages du manuel correspondant a la commande
-whatis <commande>       # Afficher la description du manuel correspondant a la commande
+man <commande>          # Afficher les pages du manuel correspondant à la commande
+whatis <commande>       # Afficher la description du manuel correspondant à la commande
 apropos <mot>           # Afficher les descriptions du manuel dont les pages contienent le mot 
 history                 # Afficher l'historique des commandes
-alias <commande>=<expr> # Creer une commande correspondant a une expression
+alias <commande>=<expr> # Créer une commande correspondant à une expression
 \end{minted}
 
 \subsection{Hierarchie}
@@ -42,27 +42,27 @@ alias <commande>=<expr> # Creer une commande correspondant a une expression
 ls <dossier>    # Afficher le contenu du dossier
 pwd             # Afficher le chemin absolu du dossier courant
 cd <dossier>    # Changer de dossier
-tree            # Afficher l'arborescence de repertoires
+tree            # Afficher l'arborescence de répertoires
 \end{minted}
 
 \subsection{Affichage}
 \begin{minted}{bash}
 file <fichier>  # Afficher une description du type du fichier
 cat <fichier>   # Afficher le contenu du fichier
-sort <fichier>  # Afficher le contenu du fichier trie
+sort <fichier>  # Afficher le contenu du fichier trié
 more <fichier>  # Visualiser le contenu du fichier par le haut
 less <fichier>  # Visualiser le contenu du fichier par le bas
 \end{minted}
 
 \subsection{Gestion}
 \begin{minted}{bash}
-mkdir <dossier>             # Creer le dossier
+mkdir <dossier>             # Créer le dossier
 rmdir <dossier>             # Supprimer le dossier vide
-touch <fichier>             # Creer le fichier
+touch <fichier>             # Créer le fichier
 rm <fichier>                # Supprimer le fichier
 cp <fichier> <dossier>      # Copier le fichier dans le dossier
-mv <fichier> <dossier>      # Deplacer le fichier dans le dossier
-ln <fichier1> <fichier2>    # Creer un raccourci fichier1 vers le fichier2 
+mv <fichier> <dossier>      # Déplacer le fichier dans le dossier
+ln <fichier1> <fichier2>    # Créer un raccourci fichier1 vers le fichier2 
 \end{minted}
 
 \section{TP2 : Commandes utilisateur Unix}
@@ -97,13 +97,13 @@ Les 10 premiers caractères représente :
 Afin de modifier les droits d'un fichier, on peut d'abord agir sur les droits créateur, groupe et autre :
 
 \begin{minted}{bash}
-chmod +x fichier    # Donne a tous les utilisateurs la permission d'execution
+chmod +x fichier    # Donne à tous les utilisateurs la permission d'exécution
 chmod u+r fichier   # Donne au proprietaire la permission de lecture
-chmod g+w fichier   # Donne au groupe la permission d'ecriture
-chmod o+x fichier   # Donne a autre la permission d'execution
-chmod a-r fichier   # Enleve a tous (u,g,o) les permissions de lecture
-chmod u+s fichier   # Donne les memes droits que le proprietaire a l'utilisateur
-chmod o+t fichier   # Seul le proprietaire a la permission d'execution
+chmod g+w fichier   # Donne au groupe la permission d'écriture
+chmod o+x fichier   # Donne au autre la permission d'exécution
+chmod a-r fichier   # Enlève a tous (u,g,o) les permissions de lecture
+chmod u+s fichier   # Donne les mêmes droits que le proprietaire a l'utilisateur
+chmod o+t fichier   # Seul le proprietaire a la permission d'exécution
 \end{minted}
 
 On peut ensuite modifier le groupe ou bien le créateur :
@@ -116,11 +116,11 @@ chown IDIA2026 Systeme_Info # Change le createur du fichier "Systeme_Info" en "I
 \subsection{Système}
 \begin{itemize}
   \item /etc/fstab : liste les montages disponibles
-  \item /etc/mtab : liste les points actuellements montés
+  \item /etc/mtab : liste les points actuellement montés
 \end{itemize}
 \begin{minted}{bash}
 df <fichier>    # Occupation disque du fichier
-mount           # Monte un systeme de fichiers dans un repertoire de l'arborescence
+mount           # Monte un systeme de fichiers dans un répertoire de l'arborescence
 \end{minted}
 
 \subsection{Redirection}
@@ -129,7 +129,7 @@ Dans Unix, on peut rediriger la sortie d'une commande dans un fichier ou bien ut
 ls > listefichiers.txt
 \end{minted}
 
-Cette commande créer (ou écrase) le fichier "listefichiers.txt" avec le résultat de la commande "ls".
+Cette commande crée (ou écrase) le fichier "listefichiers.txt" avec le résultat de la commande "ls".
 
 D'autres types de redirection :
 
@@ -155,8 +155,8 @@ grep <expr> <fichier>   # Rechercher une expression dans le fichier
 
 \subsection{Traitement des fichiers}
 \begin{minted}{bash}
-  head <fichier>    # Premieres lignes du fichier
-  tail <fichier>    # Dernieres lignes du fichier
+  head <fichier>    # Premières lignes du fichier
+  tail <fichier>    # Dernières lignes du fichier
   split <fichier>   # Fractionnement du fichier en plusieurs
   cut <fichier>     # Fractionnement vertical du fichier  
 \end{minted}
@@ -168,7 +168,7 @@ sed 's/Hello/Bonjour/g' fichier.txt #-> remplace 'Hello' par 'Bonjour' dans le f
 \end{minted}
 
 tr
-Permet de remplacer a petite echelle.
+Permet de remplacer à petite échelle.
 
 \begin{minted}{bash}
 echo toto | tr o a      #-> tata
@@ -177,9 +177,9 @@ echo hello | tr heo abc #-> abllc
 
 \subsection{Compression et archivage}
 \begin{minted}{bash}
-  gzip <fichier>    # Compression du fichier
-  gunzip <fichier>  # Decompression du fichier
-  zip <fichier>     # Compression et archivage du fichier
+  gzip <fichier>    # Compréssion du fichier
+  gunzip <fichier>  # Decompréssion du fichier
+  zip <fichier>     # Compréssion et archivage du fichier
   unzip <fichier>   # Extraction du contenu
   tar <fichiers>    # Archivage des fichiers
 \end{minted}
@@ -219,21 +219,21 @@ $2 # arg2
 
 $# # le nombre d'arguments
 $@ # tout les arguments sous la forme de liste
-$* # tout les arguments sous la forme d'une chaine de caractere
+$* # tout les arguments sous la forme d'une chaîne de caractere
 
 $0 # le nom du script (avec le ./)
-$? # 1 si la commande precedente a fait une erreur sinon 0
+$? # 1 si la commande précédente a fait une erreur sinon 0
 \end{minted}
 
 Pour créer une variable ont fait :
 
 \begin{minted}{bash}
-ma_var=1 # Attention a bien colle 'ma_var' au '=' sinon ne marche pas.
+ma_var=1 # Attention a bien coller 'ma_var' au '=' sinon ça ne marche pas.
 mon_entier=-4
-mon_string="chaine de caractere"
+mon_string="chaine de caractère"
 \end{minted}
 
-Pour utiliser une variable déjà définit, on mettra systématiquement un \$ ou bien on encapsulera la variable demandé par des \`{} \`{}
+Pour utiliser une variable déjà définit, on mettra systématiquement un \$ ou bien, on encapsulera la variable demandée par des \`{} \`{}
 
 \begin{minted}{bash}
 echo $ma_var  #-> affiche 1
@@ -245,7 +245,7 @@ Afin de former une expression avec nos variables, on utilise le mot 'expr' :
 
 \begin{minted}{bash}
 echo $(expr $ma_var + 1)    #-> affiche 2
-ma_var=$(expr $ma_var + 1)  #-> incremente la variable "ma_var"
+ma_var=$(expr $ma_var + 1)  #-> incrémente la variable "ma_var"
 \end{minted}
 
 ATTENTION le \$ derrière la parenthèse du "expr" est indispensable !
