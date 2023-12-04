@@ -5,6 +5,7 @@
 \usepackage{listings}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
+\usepackage{minted}
 
 
 \author{Loïc Weber \& Thibault Gounant} 
@@ -22,39 +23,39 @@
 \section{TP1 : Unix, le système de fichier}
 
 \subsection{Manuel}
-\begin{lstlisting}
+\begin{minted}{bash}
 man <commande>          # Afficher les pages du manuel correspondant a la commande
 whatis <commande>       # Afficher la description du manuel correspondant a la commande
 apropos <mot>           # Afficher les descriptions du manuel dont les pages contienent le mot 
 history                 # Afficher l'historique des commandes
 alias <commande>=<expr> # Creer une commande correspondant a une expression
-\end{lstlisting}
+\end{minted}
 
 \subsection{Hierarchie}
-\begin{lstlisting}
-/    # Repertoire racine
-..   # Repertoire parent
-~    # Repertoire maison
-\end{lstlisting}
+\begin{minted}{bash}
+/    # Répertoire racine
+..   # Répertoire parent
+~    # Répertoire maison
+\end{minted}
 
-\begin{lstlisting}
+\begin{minted}{bash}
 ls <dossier>    # Afficher le contenu du dossier
 pwd             # Afficher le chemin absolu du dossier courant
 cd <dossier>    # Changer de dossier
 tree            # Afficher l'arborescence de repertoires
-\end{lstlisting}
+\end{minted}
 
 \subsection{Affichage}
-\begin{lstlisting}
+\begin{minted}{bash}
 file <fichier>  # Afficher une description du type du fichier
 cat <fichier>   # Afficher le contenu du fichier
 sort <fichier>  # Afficher le contenu du fichier trie
 more <fichier>  # Visualiser le contenu du fichier par le haut
 less <fichier>  # Visualiser le contenu du fichier par le bas
-\end{lstlisting}
+\end{minted}
 
 \subsection{Gestion}
-\begin{lstlisting}
+\begin{minted}{bash}
 mkdir <dossier>             # Creer le dossier
 rmdir <dossier>             # Supprimer le dossier vide
 touch <fichier>             # Creer le fichier
@@ -62,15 +63,15 @@ rm <fichier>                # Supprimer le fichier
 cp <fichier> <dossier>      # Copier le fichier dans le dossier
 mv <fichier> <dossier>      # Deplacer le fichier dans le dossier
 ln <fichier1> <fichier2>    # Creer un raccourci fichier1 vers le fichier2 
-\end{lstlisting}
+\end{minted}
 
 \section{TP2 : Commandes utilisateur Unix}
 
 \subsection{Droits des fichiers}
 
-\begin{lstlisting}
+\begin{minted}{bash}
 chmod <droit> <fichier>   # Changer les droits du fichier
-\end{lstlisting}
+\end{minted}
 
 Unix attribue à tous les fichiers deux choses :
 
@@ -80,9 +81,9 @@ Unix attribue à tous les fichiers deux choses :
 \end{itemize}
 
 Exemple de droit pour le dossier "Projects" visible avec la commande "ls -l" : 
-\begin{lstlisting}
+\begin{minted}{bash}
 drwxr-xr-x 17 justalternate root           4096 Aug  2 18:37 Projects
-\end{lstlisting}
+\end{minted}
 Les 10 premiers caractères représente :
 \begin{itemize}
   \item Le type de fichier (d = directory, - = regular file, l = symbolic link, p = pipe, s = socket ..)
@@ -95,7 +96,7 @@ Les 10 premiers caractères représente :
 
 Afin de modifier les droits d'un fichier, on peut d'abord agir sur les droits créateur, groupe et autre :
 
-\begin{lstlisting}
+\begin{minted}{bash}
 chmod +x fichier    # Donne a tous les utilisateurs la permission d'execution
 chmod u+r fichier   # Donne au proprietaire la permission de lecture
 chmod g+w fichier   # Donne au groupe la permission d'ecriture
@@ -103,30 +104,30 @@ chmod o+x fichier   # Donne a autre la permission d'execution
 chmod a-r fichier   # Enleve a tous (u,g,o) les permissions de lecture
 chmod u+s fichier   # Donne les memes droits que le proprietaire a l'utilisateur
 chmod o+t fichier   # Seul le proprietaire a la permission d'execution
-\end{lstlisting}
+\end{minted}
 
 On peut ensuite modifier le groupe ou bien le créateur :
 
-\begin{lstlisting}
+\begin{minted}{bash}
 chgrp IDIA2026 Systeme_Info # Change le groupe du fichier "Systeme_Info" en "IDIA2026"
 chown IDIA2026 Systeme_Info # Change le createur du fichier "Systeme_Info" en "IDIA2026"
-\end{lstlisting}
+\end{minted}
 
 \subsection{Système}
 \begin{itemize}
   \item /etc/fstab : liste les montages disponibles
   \item /etc/mtab : liste les points actuellements montés
 \end{itemize}
-\begin{lstlisting}
+\begin{minted}{bash}
 df <fichier>    # Occupation disque du fichier
 mount           # Monte un systeme de fichiers dans un repertoire de l'arborescence
-\end{lstlisting}
+\end{minted}
 
 \subsection{Redirection}
 Dans Unix, on peut rediriger la sortie d'une commande dans un fichier ou bien utiliser un fichier en tant qu'arguments pour une commande.
-\begin{lstlisting}
+\begin{minted}{bash}
 ls > listefichiers.txt
-\end{lstlisting}
+\end{minted}
 
 Cette commande créer (ou écrase) le fichier "listefichiers.txt" avec le résultat de la commande "ls".
 
@@ -139,66 +140,114 @@ D'autres types de redirection :
 \end{itemize}
 
 Le pipe 
-\begin{lstlisting}
+\begin{minted}{bash}
 <commande1> | <commande2>
-\end{lstlisting}
+\end{minted}
  la sortie de la première commande devient l'entrée de la deuxième commande
 
 \subsection{Recherche}
-\begin{lstlisting}
+\begin{minted}{bash}
 find <expr>             # Rechercher un fichier
 grep <expr> <fichier>   # Rechercher une expression dans le fichier
-\end{lstlisting}
+\end{minted}
 
 \section{TP3 : Commandes utiles}
 
 \subsection{Traitement des fichiers}
-\begin{lstlisting}
+\begin{minted}{bash}
   head <fichier>    # Premieres lignes du fichier
   tail <fichier>    # Dernieres lignes du fichier
   split <fichier>   # Fractionnement du fichier en plusieurs
   cut <fichier>     # Fractionnement vertical du fichier  
-\end{lstlisting}
+\end{minted}
 
 sed
 Permet de remplacer des occurences de mots dans un fichier.
-\begin{lstlisting}
+\begin{minted}{bash}
 sed 's/Hello/Bonjour/g' fichier.txt #-> remplace 'Hello' par 'Bonjour' dans le fichier.txt
-\end{lstlisting}
+\end{minted}
 
 tr
 Permet de remplacer a petite echelle.
 
-\begin{lstlisting}
+\begin{minted}{bash}
 echo toto | tr o a      #-> tata
 echo hello | tr heo abc #-> abllc
-\end{lstlisting}
+\end{minted}
 
 \subsection{Compression et archivage}
-\begin{lstlisting}
+\begin{minted}{bash}
   gzip <fichier>    # Compression du fichier
   gunzip <fichier>  # Decompression du fichier
   zip <fichier>     # Compression et archivage du fichier
   unzip <fichier>   # Extraction du contenu
   tar <fichiers>    # Archivage des fichiers
-\end{lstlisting}
+\end{minted}
 
 diff
 Permet de comparer deux fichiers lignes par lignes et d'afficher les lignes différentes.
-\begin{lstlisting}
+\begin{minted}{bash}
 diff fichier1 fichier2
-\end{lstlisting}
+\end{minted}
 
 uniq
 Permet de ne pas tenir compte des répétitions.
-\begin{lstlisting}
+\begin{minted}{bash}
 uniq fichier
-\end{lstlisting}
+\end{minted}
 
 comm
 Permet de comparer deux fichiers triés ligne par ligne et d'afficher les lignes communes.
-\begin{lstlisting}
+\begin{minted}{bash}
 comm fichier1 fichier2
-\end{lstlisting}
+\end{minted}
+
+\section{Le Shell}
+
+Tous les scripts bash ont une extension .sh pour les exécuter dans l'invite de commande ont fait ./mon\_script.sh attention de bien avoir la permission d'exécuter le fichier\dots
+
+Pour passer des arguments a notre script ont fait :
+\begin{minted}{bash}
+./mon_script arg1 arg2 arg3
+\end{minted}
+
+Et pour retrouver ces arguments ont fait :
+
+\begin{minted}{bash}
+$1 # arg1
+$2 # arg2
+
+$# # le nombre d'arguments
+$@ # tout les arguments sous la forme de liste
+$* # tout les arguments sous la forme d'une chaine de caractere
+
+$0 # le nom du script (avec le ./)
+$? # 1 si la commande precedente a fait une erreur sinon 0
+\end{minted}
+
+Pour créer une variable ont fait :
+
+\begin{minted}{bash}
+ma_var=1 # Attention a bien colle 'ma_var' au '=' sinon ne marche pas.
+mon_entier=-4
+mon_string="chaine de caractere"
+\end{minted}
+
+Pour utiliser une variable déjà définit, on mettra systématiquement un \$ ou bien on encapsulera la variable demandé par des \`{} \`{}
+
+\begin{minted}{bash}
+echo $ma_var  #-> affiche 1
+echo `ma_var`  #-> affiche 1
+var2=$ma_var  #-> copie ma_var dans var2
+\end{minted}
+
+Afin de former une expression avec nos variables, on utilise le mot 'expr' :
+
+\begin{minted}{bash}
+echo $(expr $ma_var + 1)    #-> affiche 2
+ma_var=$(expr $ma_var + 1)  #-> incremente la variable "ma_var"
+\end{minted}
+
+ATTENTION le \$ derrière la parenthèse du "expr" est indispensable !
 
 \end{document}
