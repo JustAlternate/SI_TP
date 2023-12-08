@@ -202,7 +202,6 @@ Permet de comparer deux fichiers triés ligne par ligne et d'afficher les lignes
 comm fichier1 fichier2
 \end{minted}
 
-\section{Le Shell}
 \section{TP4 : Le Shell}
 
 Tous les scripts bash ont une extension .sh pour les exécuter dans l'invite de commande ont fait ./mon\_script.sh attention de bien avoir la permission d'exécuter le fichier\dots
@@ -298,5 +297,23 @@ Les opérateurs de comparaisons :
   if [ -x \$fich ] & on a les droits execution sur fich\\
  \hline
 \end{tabular}
+
+\section{TP5 : Les processus}
+
+\subsection{Les signaux}
+
+\begin{minted}{bash}
+  ps            # Affiche le pid (et autres infos) des processus courant
+  kill -sig pid # Envoie un signal à un processus
+\end{minted}
+
+  SIGINT  (2)   Interruption du processus
+  SIGQUIT (3)   Abandon du processus
+  SIGKILL (9)   Termine le processus immédiatement
+  SIGTERM (15)  Termine le processus 
+  SIGCONT (18)  Continue le processus 
+  SIGSTOP (19)  Suspension du processus
+
+
 
 \end{document}
