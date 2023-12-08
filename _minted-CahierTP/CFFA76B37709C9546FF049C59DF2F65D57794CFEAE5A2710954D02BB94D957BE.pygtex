@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nb}{echo}\PYG{+w}{ }\PYG{k}{\PYGZdl{}(}expr\PYG{+w}{ }\PYG{n+nv}{\PYGZdl{}ma\PYGZus{}var}\PYG{+w}{ }+\PYG{+w}{ }\PYG{l+m}{1}\PYG{k}{)}\PYG{+w}{    }\PYG{c+c1}{\PYGZsh{}\PYGZhy{}\PYGZgt{} affiche 2}
+\PYG{n+nv}{ma\PYGZus{}var}\PYG{o}{=}\PYG{k}{\PYGZdl{}(}expr\PYG{+w}{ }\PYG{n+nv}{\PYGZdl{}ma\PYGZus{}var}\PYG{+w}{ }+\PYG{+w}{ }\PYG{l+m}{1}\PYG{k}{)}\PYG{+w}{  }\PYG{c+c1}{\PYGZsh{}\PYGZhy{}\PYGZgt{} incrémente la variable \PYGZdq{}ma\PYGZus{}var\PYGZdq{}}
+\end{Verbatim}

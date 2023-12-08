@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{if}\PYG{+w}{ }\PYG{o}{[}\PYG{+w}{ }\PYGZlt{}condition\PYGZgt{}\PYG{+w}{ }\PYG{o}{]}
+\PYG{k}{then}
+\PYG{+w}{    }\PYGZlt{}commande\PYGZgt{}
+\PYG{k}{elif}\PYG{+w}{ }\PYG{o}{[}\PYG{+w}{ }\PYGZlt{}condition\PYGZgt{}\PYG{+w}{ }\PYG{o}{]}
+\PYG{k}{then}
+\PYG{+w}{    }\PYGZlt{}commande\PYGZgt{}
+\PYG{k}{else}
+\PYG{+w}{    }\PYGZlt{}commande\PYGZgt{}
+\PYG{k}{fi}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}obligatoire pour terminer un if}
+\end{Verbatim}

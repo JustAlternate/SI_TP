@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+ls\PYG{+w}{ }\PYGZlt{}dossier\PYGZgt{}\PYG{+w}{    }\PYG{c+c1}{\PYGZsh{} Afficher le contenu du dossier}
+\PYG{n+nb}{pwd}\PYG{+w}{             }\PYG{c+c1}{\PYGZsh{} Afficher le chemin absolu du dossier courant}
+\PYG{n+nb}{cd}\PYG{+w}{ }\PYGZlt{}dossier\PYGZgt{}\PYG{+w}{    }\PYG{c+c1}{\PYGZsh{} Changer de dossier}
+tree\PYG{+w}{            }\PYG{c+c1}{\PYGZsh{} Afficher l\PYGZsq{}arborescence de répertoires}
+\end{Verbatim}

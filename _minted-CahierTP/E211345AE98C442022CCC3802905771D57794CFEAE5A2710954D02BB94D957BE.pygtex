@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+file\PYG{+w}{ }\PYGZlt{}fichier\PYGZgt{}\PYG{+w}{  }\PYG{c+c1}{\PYGZsh{} Afficher une description du type du fichier}
+cat\PYG{+w}{ }\PYGZlt{}fichier\PYGZgt{}\PYG{+w}{   }\PYG{c+c1}{\PYGZsh{} Afficher le contenu du fichier}
+sort\PYG{+w}{ }\PYGZlt{}fichier\PYGZgt{}\PYG{+w}{  }\PYG{c+c1}{\PYGZsh{} Afficher le contenu du fichier trié}
+more\PYG{+w}{ }\PYGZlt{}fichier\PYGZgt{}\PYG{+w}{  }\PYG{c+c1}{\PYGZsh{} Visualiser le contenu du fichier par le haut}
+less\PYG{+w}{ }\PYGZlt{}fichier\PYGZgt{}\PYG{+w}{  }\PYG{c+c1}{\PYGZsh{} Visualiser le contenu du fichier par le bas}
+\end{Verbatim}

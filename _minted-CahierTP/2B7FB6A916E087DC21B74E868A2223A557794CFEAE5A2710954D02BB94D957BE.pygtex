@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nb}{echo}\PYG{+w}{ }\PYG{n+nv}{\PYGZdl{}ma\PYGZus{}var}\PYG{+w}{  }\PYG{c+c1}{\PYGZsh{}\PYGZhy{}\PYGZgt{} affiche 1}
+\PYG{n+nb}{echo}\PYG{+w}{ }\PYG{l+s+sb}{`}ma\PYGZus{}var\PYG{l+s+sb}{`}\PYG{+w}{  }\PYG{c+c1}{\PYGZsh{}\PYGZhy{}\PYGZgt{} affiche 1}
+\PYG{n+nv}{var2}\PYG{o}{=}\PYG{n+nv}{\PYGZdl{}ma\PYGZus{}var}\PYG{+w}{  }\PYG{c+c1}{\PYGZsh{}\PYGZhy{}\PYGZgt{} copie ma\PYGZus{}var dans var2}
+\end{Verbatim}

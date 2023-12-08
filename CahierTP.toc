@@ -1,6 +1,15 @@
-\contentsline {section}{\numberline {1}TP1 : Unix}{1}{}%
+\contentsline {section}{\numberline {1}TP1 : Unix, le système de fichier}{1}{}%
 \contentsline {subsection}{\numberline {1.1}Manuel}{1}{}%
 \contentsline {subsection}{\numberline {1.2}Hierarchie}{1}{}%
 \contentsline {subsection}{\numberline {1.3}Affichage}{1}{}%
-\contentsline {subsection}{\numberline {1.4}Gestion}{1}{}%
-\contentsline {subsection}{\numberline {1.5}Recherche}{2}{}%
+\contentsline {subsection}{\numberline {1.4}Gestion}{2}{}%
+\contentsline {section}{\numberline {2}TP2 : Commandes utilisateur Unix}{2}{}%
+\contentsline {subsection}{\numberline {2.1}Droits des fichiers}{2}{}%
+\contentsline {subsection}{\numberline {2.2}Système}{2}{}%
+\contentsline {subsection}{\numberline {2.3}Redirection}{3}{}%
+\contentsline {subsection}{\numberline {2.4}Recherche}{3}{}%
+\contentsline {section}{\numberline {3}TP3 : Commandes utiles}{3}{}%
+\contentsline {subsection}{\numberline {3.1}Traitement des fichiers}{3}{}%
+\contentsline {subsection}{\numberline {3.2}Compression et archivage}{3}{}%
+\contentsline {section}{\numberline {4}Le Shell}{4}{}%
+\contentsline {subsection}{\numberline {4.1}Les Tests}{4}{}%

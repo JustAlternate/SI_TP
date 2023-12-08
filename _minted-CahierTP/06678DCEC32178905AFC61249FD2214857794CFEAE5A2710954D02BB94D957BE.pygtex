@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nb}{echo}\PYG{+w}{ }toto\PYG{+w}{ }\PYG{p}{|}\PYG{+w}{ }tr\PYG{+w}{ }o\PYG{+w}{ }a\PYG{+w}{      }\PYG{c+c1}{\PYGZsh{}\PYGZhy{}\PYGZgt{} tata}
+\PYG{n+nb}{echo}\PYG{+w}{ }hello\PYG{+w}{ }\PYG{p}{|}\PYG{+w}{ }tr\PYG{+w}{ }heo\PYG{+w}{ }abc\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}\PYGZhy{}\PYGZgt{} abllc}
+\end{Verbatim}

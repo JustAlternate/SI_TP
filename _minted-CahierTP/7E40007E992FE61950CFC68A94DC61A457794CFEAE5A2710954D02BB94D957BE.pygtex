@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+mkdir\PYG{+w}{ }\PYGZlt{}dossier\PYGZgt{}\PYG{+w}{             }\PYG{c+c1}{\PYGZsh{} Créer le dossier}
+rmdir\PYG{+w}{ }\PYGZlt{}dossier\PYGZgt{}\PYG{+w}{             }\PYG{c+c1}{\PYGZsh{} Supprimer le dossier vide}
+touch\PYG{+w}{ }\PYGZlt{}fichier\PYGZgt{}\PYG{+w}{             }\PYG{c+c1}{\PYGZsh{} Créer le fichier}
+rm\PYG{+w}{ }\PYGZlt{}fichier\PYGZgt{}\PYG{+w}{                }\PYG{c+c1}{\PYGZsh{} Supprimer le fichier}
+cp\PYG{+w}{ }\PYGZlt{}fichier\PYGZgt{}\PYG{+w}{ }\PYGZlt{}dossier\PYGZgt{}\PYG{+w}{      }\PYG{c+c1}{\PYGZsh{} Copier le fichier dans le dossier}
+mv\PYG{+w}{ }\PYGZlt{}fichier\PYGZgt{}\PYG{+w}{ }\PYGZlt{}dossier\PYGZgt{}\PYG{+w}{      }\PYG{c+c1}{\PYGZsh{} Déplacer le fichier dans le dossier}
+ln\PYG{+w}{ }\PYGZlt{}fichier1\PYGZgt{}\PYG{+w}{ }\PYGZlt{}fichier2\PYGZgt{}\PYG{+w}{    }\PYG{c+c1}{\PYGZsh{} Créer un raccourci fichier1 vers le fichier2}
+\end{Verbatim}

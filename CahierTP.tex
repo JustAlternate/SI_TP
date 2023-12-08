@@ -203,6 +203,7 @@ comm fichier1 fichier2
 \end{minted}
 
 \section{Le Shell}
+\section{TP4 : Le Shell}
 
 Tous les scripts bash ont une extension .sh pour les exécuter dans l'invite de commande ont fait ./mon\_script.sh attention de bien avoir la permission d'exécuter le fichier\dots
 
@@ -249,5 +250,53 @@ ma_var=$(expr $ma_var + 1)  #-> incrémente la variable "ma_var"
 \end{minted}
 
 ATTENTION le \$ derrière la parenthèse du "expr" est indispensable !
+
+\subsection{Les Tests}
+
+Syntax pour les comparaisons :
+
+\begin{minted}{bash}
+if [ <condition> ]
+then
+    <commande>
+elif [ <condition> ]
+then
+    <commande>
+else
+    <commande>
+fi #obligatoire pour terminer un if
+\end{minted}
+
+Les opérateurs de comparaisons :
+
+\begin{tabular}{ |p{4cm}||p{4cm}| }
+ \hline
+ \multicolumn{2}{|c|}{Tests sur les fichiers} \\
+ \hline
+  Options & Signification \\
+ \hline
+  if [ -e \$fich ] & fich existe\\
+  if [ -f \$fich ] & fich est un fichier\\
+  if [ -d \$fich ] & fich est un dossier\\
+  if [ -r \$fich ] & on a les droits lecture sur fich\\
+  if [ -w \$fich ] & on a les droits ecriture sur fich\\
+  if [ -x \$fich ] & on a les droits execution sur fich\\
+ \hline
+\end{tabular}
+
+\begin{tabular}{ |p{4cm}||p{4cm}| }
+ \hline
+ \multicolumn{2}{|c|}{Tests sur les Entiers} \\
+ \hline
+  Options & Signification \\
+ \hline
+  if [ -e \$fich ] & fich existe\\
+  if [ -f \$fich ] & fich est un fichier\\
+  if [ -d \$fich ] & fich est un dossier\\
+  if [ -r \$fich ] & on a les droits lecture sur fich\\
+  if [ -w \$fich ] & on a les droits ecriture sur fich\\
+  if [ -x \$fich ] & on a les droits execution sur fich\\
+ \hline
+\end{tabular}
 
 \end{document}

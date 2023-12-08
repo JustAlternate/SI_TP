@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+find\PYG{+w}{ }\PYGZlt{}expr\PYGZgt{}\PYG{+w}{             }\PYG{c+c1}{\PYGZsh{} Rechercher un fichier}
+grep\PYG{+w}{ }\PYGZlt{}expr\PYGZgt{}\PYG{+w}{ }\PYGZlt{}fichier\PYGZgt{}\PYG{+w}{   }\PYG{c+c1}{\PYGZsh{} Rechercher une expression dans le fichier}
+\end{Verbatim}

@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nv}{\PYGZdl{}1}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{} arg1}
+\PYG{n+nv}{\PYGZdl{}2}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{} arg2}
+
+\PYG{n+nv}{\PYGZdl{}\PYGZsh{}}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{} le nombre d\PYGZsq{}arguments}
+\PYG{n+nv}{\PYGZdl{}@}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{} tout les arguments sous la forme de liste}
+\PYG{n+nv}{\PYGZdl{}*}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{} tout les arguments sous la forme d\PYGZsq{}une chaîne de caractere}
+
+\PYG{n+nv}{\PYGZdl{}0}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{} le nom du script (avec le ./)}
+\PYG{n+nv}{\PYGZdl{}?}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{} 1 si la commande précédente a fait une erreur sinon 0}
+\end{Verbatim}

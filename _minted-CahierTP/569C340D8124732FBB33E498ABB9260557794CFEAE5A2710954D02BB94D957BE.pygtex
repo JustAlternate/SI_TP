@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{  }gzip\PYG{+w}{ }\PYGZlt{}fichier\PYGZgt{}\PYG{+w}{    }\PYG{c+c1}{\PYGZsh{} Compression du fichier}
+\PYG{+w}{  }gunzip\PYG{+w}{ }\PYGZlt{}fichier\PYGZgt{}\PYG{+w}{  }\PYG{c+c1}{\PYGZsh{} Decompression du fichier}
+\PYG{+w}{  }zip\PYG{+w}{ }\PYGZlt{}fichier\PYGZgt{}\PYG{+w}{     }\PYG{c+c1}{\PYGZsh{} Compression et archivage du fichier}
+\PYG{+w}{  }unzip\PYG{+w}{ }\PYGZlt{}fichier\PYGZgt{}\PYG{+w}{   }\PYG{c+c1}{\PYGZsh{} Extraction du contenu}
+\PYG{+w}{  }tar\PYG{+w}{ }\PYGZlt{}fichiers\PYGZgt{}\PYG{+w}{    }\PYG{c+c1}{\PYGZsh{} Archivage des fichiers}
+\end{Verbatim}

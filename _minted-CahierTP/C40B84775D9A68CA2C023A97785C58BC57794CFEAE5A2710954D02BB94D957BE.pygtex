@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nv}{ma\PYGZus{}var}\PYG{o}{=}\PYG{l+m}{1}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{} Attention a bien coller \PYGZsq{}ma\PYGZus{}var\PYGZsq{} au \PYGZsq{}=\PYGZsq{} sinon ça ne marche pas.}
+\PYG{n+nv}{mon\PYGZus{}entier}\PYG{o}{=}\PYGZhy{}4
+\PYG{n+nv}{mon\PYGZus{}string}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}chaine de caractère\PYGZdq{}}
+\end{Verbatim}

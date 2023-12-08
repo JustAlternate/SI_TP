@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+chmod\PYG{+w}{ }+x\PYG{+w}{ }fichier\PYG{+w}{    }\PYG{c+c1}{\PYGZsh{} Donne à tous les utilisateurs la permission d\PYGZsq{}exécution}
+chmod\PYG{+w}{ }u+r\PYG{+w}{ }fichier\PYG{+w}{   }\PYG{c+c1}{\PYGZsh{} Donne au proprietaire la permission de lecture}
+chmod\PYG{+w}{ }g+w\PYG{+w}{ }fichier\PYG{+w}{   }\PYG{c+c1}{\PYGZsh{} Donne au groupe la permission d\PYGZsq{}écriture}
+chmod\PYG{+w}{ }o+x\PYG{+w}{ }fichier\PYG{+w}{   }\PYG{c+c1}{\PYGZsh{} Donne au autre la permission d\PYGZsq{}exécution}
+chmod\PYG{+w}{ }a\PYGZhy{}r\PYG{+w}{ }fichier\PYG{+w}{   }\PYG{c+c1}{\PYGZsh{} Enlève a tous (u,g,o) les permissions de lecture}
+chmod\PYG{+w}{ }u+s\PYG{+w}{ }fichier\PYG{+w}{   }\PYG{c+c1}{\PYGZsh{} Donne les mêmes droits que le proprietaire a l\PYGZsq{}utilisateur}
+chmod\PYG{+w}{ }o+t\PYG{+w}{ }fichier\PYG{+w}{   }\PYG{c+c1}{\PYGZsh{} Seul le proprietaire a la permission d\PYGZsq{}exécution}
+\end{Verbatim}

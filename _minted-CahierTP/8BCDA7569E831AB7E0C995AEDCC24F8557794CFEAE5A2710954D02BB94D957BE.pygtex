@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+man\PYG{+w}{ }\PYGZlt{}commande\PYGZgt{}\PYG{+w}{          }\PYG{c+c1}{\PYGZsh{} Afficher les pages du manuel correspondant à la commande}
+whatis\PYG{+w}{ }\PYGZlt{}commande\PYGZgt{}\PYG{+w}{       }\PYG{c+c1}{\PYGZsh{} Afficher la description du manuel correspondant à la commande}
+apropos\PYG{+w}{ }\PYGZlt{}mot\PYGZgt{}\PYG{+w}{           }\PYG{c+c1}{\PYGZsh{} Afficher les descriptions du manuel dont les pages contienent le mot}
+\PYG{n+nb}{history}\PYG{+w}{                 }\PYG{c+c1}{\PYGZsh{} Afficher l\PYGZsq{}historique des commandes}
+\PYG{n+nb}{alias}\PYG{+w}{ }\PYGZlt{}commande\PYGZgt{}\PYG{o}{=}\PYGZlt{}expr\PYGZgt{}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{} Créer une commande correspondant à une expression}
+\end{Verbatim}

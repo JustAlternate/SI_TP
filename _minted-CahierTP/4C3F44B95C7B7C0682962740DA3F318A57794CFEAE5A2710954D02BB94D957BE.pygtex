@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+chgrp\PYG{+w}{ }IDIA2026\PYG{+w}{ }Systeme\PYGZus{}Info\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{} Change le groupe du fichier \PYGZdq{}Systeme\PYGZus{}Info\PYGZdq{} en \PYGZdq{}IDIA2026\PYGZdq{}}
+chown\PYG{+w}{ }IDIA2026\PYG{+w}{ }Systeme\PYGZus{}Info\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{} Change le createur du fichier \PYGZdq{}Systeme\PYGZus{}Info\PYGZdq{} en \PYGZdq{}IDIA2026\PYGZdq{}}
+\end{Verbatim}

@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+sed\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}s/Hello/Bonjour/g\PYGZsq{}}\PYG{+w}{ }fichier.txt\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}\PYGZhy{}\PYGZgt{} remplace \PYGZsq{}Hello\PYGZsq{} par \PYGZsq{}Bonjour\PYGZsq{} dans le fichier.txt}
+\end{Verbatim}

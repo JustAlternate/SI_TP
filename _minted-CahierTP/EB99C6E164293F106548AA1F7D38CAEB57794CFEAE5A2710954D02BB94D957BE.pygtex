@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{  }head\PYG{+w}{ }\PYGZlt{}fichier\PYGZgt{}\PYG{+w}{    }\PYG{c+c1}{\PYGZsh{} Premières lignes du fichier}
+\PYG{+w}{  }tail\PYG{+w}{ }\PYGZlt{}fichier\PYGZgt{}\PYG{+w}{    }\PYG{c+c1}{\PYGZsh{} Dernières lignes du fichier}
+\PYG{+w}{  }split\PYG{+w}{ }\PYGZlt{}fichier\PYGZgt{}\PYG{+w}{   }\PYG{c+c1}{\PYGZsh{} Fractionnement du fichier en plusieurs}
+\PYG{+w}{  }cut\PYG{+w}{ }\PYGZlt{}fichier\PYGZgt{}\PYG{+w}{     }\PYG{c+c1}{\PYGZsh{} Fractionnement vertical du fichier}
+\end{Verbatim}

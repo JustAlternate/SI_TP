@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+df\PYG{+w}{ }\PYGZlt{}fichier\PYGZgt{}\PYG{+w}{    }\PYG{c+c1}{\PYGZsh{} Occupation disque du fichier}
+mount\PYG{+w}{           }\PYG{c+c1}{\PYGZsh{} Monte un systeme de fichiers dans un répertoire de l\PYGZsq{}arborescence}
+\end{Verbatim}
