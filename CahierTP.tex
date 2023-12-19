@@ -443,4 +443,20 @@ done < "Harry_Potter.txt"
 \> because they just didn't hold with such nonsense.
 \end{minted}
 
+\section{TP5 : Les processus}
+
+\subsection{Les signaux}
+
+\begin{minted}{bash}
+  ps            # Affiche le pid (et autres infos) des processus courant
+  kill -sig pid # Envoie un signal à un processus
+\end{minted}
+
+  SIGINT  (2)   Interruption du processus
+  SIGQUIT (3)   Abandon du processus
+  SIGKILL (9)   Termine le processus immédiatement
+  SIGTERM (15)  Termine le processus 
+  SIGCONT (18)  Continue le processus 
+  SIGSTOP (19)  Suspension du processus
+
 \end{document}
