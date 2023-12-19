@@ -436,12 +436,18 @@ because they just didn't hold with such nonsense.
 
 \subsection{Les signaux}
 
-\begin{minted}{bash}
+\begin{lstlisting}
+  programme -> fichier executable, contient du code
+  processus -> programme en cours d'execution
+  thread -> fil d'exécution d'un processus
+\end{lstlisting}
+
+\begin{lstlisting}
   ps            # Affiche le pid (et autres infos) des processus courant
   kill -sig pid # Envoie un signal à un processus
-\end{minted}
+\end{lstlisting}
 
-\begin{minted}{bash}
+\begin{lstlisting}
   SIGHUP  (1)   # Communication interrompue involontairement
   SIGINT  (2)   # Interruption du processus
   SIGQUIT (3)   # Abandon du processus
@@ -453,10 +459,6 @@ because they just didn't hold with such nonsense.
   SIGCONT (18)  # Continue le processus mis en pause
   SIGSTOP (19)  # Suspension du processus
   SIGSTP  (20)  # Mettre en tâche de fond
-\end{minted}
-
-programme -> fichier executable, contient du code
-processus -> programme en cours d'execution
-thread -> fil d'exécution d'un processus
+\end{lstlisting}
 
 \end{document}
