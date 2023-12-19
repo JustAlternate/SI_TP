@@ -336,19 +336,19 @@ Les boucles while :
 
 \begin{minted}{bash}
 i=0
-while [ \$i -le 5 ] #On peut evidemment mettre n'importe quelle condition booléene entre les []
+while [ $i -le 5 ] #On peut evidemment mettre n'importe quelle condition booléene entre les []
 do
-    echo "\$i"
-    i=\$(expr \$i + 1)
+    echo "$i"
+    i=$(expr $i + 1)
 done
 \end{minted}
 
 Les boucles for :
 
 \begin{minted}{bash}
-for i in \{0\.\.5\}
+for i in {0..5}
 do
-  echo "\$i"
+  echo "$i"
 done
 \end{minted}
 
@@ -367,9 +367,9 @@ ATTENTION DANS L'EXEMPLE DE LA BOUCLE FOR AU-DESSUS ON NE PEUT PAS REMPLACER 5 P
 
 \begin{minted}{bash}
 x=5
-for i in \$(seq \$x) #Créer une séquence de 1 a 5
+for i in $(seq $x) #Créer une séquence de 1 a 5
 do
-    echo "\$i"
+    echo "$i"
 done
 \end{minted}
 
@@ -382,16 +382,16 @@ Avec la version 4.0 de Bash, on peut faire des trucs plus propre genre :
 #!/bin/bash
 for i in {0..10..2} #{départ..arrivé..incrémentation}
 do
-  echo "\$i"
+  echo "$i"
 done
 \end{minted}
 
 \subsection{Parcourir les arguments}
 
 \begin{minted}{bash}
-for i in "\$@" #Permet de parcourir les arguments en entrées.
+for i in "$@" #Permet de parcourir les arguments en entrées.
 do
-    echo "\$i"
+    echo "$i"
 done
 \end{minted}
 
@@ -413,7 +413,7 @@ On peut aussi lire toutes les lignes d'un texte :
 \begin{minted}{bash}
 while read ligne
 do
-    echo "\$ligne"
+    echo "$ligne"
 done < "Harry_Potter.txt"
 \end{minted}
 
