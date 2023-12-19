@@ -307,13 +307,22 @@ Les opérateurs de comparaisons :
   kill -sig pid # Envoie un signal à un processus
 \end{minted}
 
-  SIGINT  (2)   Interruption du processus
-  SIGQUIT (3)   Abandon du processus
-  SIGKILL (9)   Termine le processus immédiatement
-  SIGTERM (15)  Termine le processus 
-  SIGCONT (18)  Continue le processus 
-  SIGSTOP (19)  Suspension du processus
+\begin{minted}{bash}
+  SIGHUP  (1)   # Communication interrompue involontairement
+  SIGINT  (2)   # Interruption du processus
+  SIGQUIT (3)   # Abandon du processus
+  SIGKILL (9)   # Termine le processus immédiatement
+  SIGUSR1 (10)  # Signal défini par l'utilisateur
+  SIGUSR2 (12)  # Signal défini par l'utilisateur
+  SIGTERM (15)  # Termine le processus 
+  SIGCHLD (17)  # Un processus enfant se termine ou s'arrête
+  SIGCONT (18)  # Continue le processus mis en pause
+  SIGSTOP (19)  # Suspension du processus
+  SIGSTP  (20)  # Mettre en tâche de fond
+\end{minted}
 
-
+programme -> fichier executable, contient du code
+processus -> programme en cours d'execution
+thread -> fil d'exécution d'un processus
 
 \end{document}
