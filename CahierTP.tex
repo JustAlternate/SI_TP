@@ -1,12 +1,14 @@
 \documentclass{article}
 
 \usepackage[margin=0.3in]{geometry}
+\usepackage{multirow}
+\usepackage{fancyvrb}
+\usepackage{fvextra}
 \usepackage{amsmath}
 \usepackage{listings}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{minted}
-
 
 \author{Loïc Weber \& Thibault Gounant} 
 \title{Cahier de TP}
@@ -266,7 +268,7 @@ else
 fi #obligatoire pour terminer un if
 \end{minted}
 
-Les opérateurs de comparaisons :
+Les options de comparaisons :
 
 \begin{tabular}{ |p{4cm}||p{4cm}| }
  \hline
@@ -275,13 +277,20 @@ Les opérateurs de comparaisons :
   Options & Signification \\
  \hline
   if [ -e \$fich ] & fich existe\\
+ \hline
   if [ -f \$fich ] & fich est un fichier\\
+ \hline
   if [ -d \$fich ] & fich est un dossier\\
+ \hline
   if [ -r \$fich ] & on a les droits lecture sur fich\\
+ \hline
   if [ -w \$fich ] & on a les droits ecriture sur fich\\
+ \hline
   if [ -x \$fich ] & on a les droits execution sur fich\\
  \hline
 \end{tabular}
+
+\medskip
 
 \begin{tabular}{ |p{4cm}||p{4cm}| }
  \hline
@@ -289,14 +298,139 @@ Les opérateurs de comparaisons :
  \hline
   Options & Signification \\
  \hline
-  if [ -e \$fich ] & fich existe\\
-  if [ -f \$fich ] & fich est un fichier\\
-  if [ -d \$fich ] & fich est un dossier\\
-  if [ -r \$fich ] & on a les droits lecture sur fich\\
-  if [ -w \$fich ] & on a les droits ecriture sur fich\\
-  if [ -x \$fich ] & on a les droits execution sur fich\\
+  if [ \$n1 -eq \$n2 ] & $n1 == n2$\\
+ \hline
+  if [ \$n1 -ne \$n2 ] & $n1 != n2$\\
+ \hline
+  if [ \$n1 -lt \$n2 ] & $n1 < n2$\\
+ \hline
+  if [ \$n1 -gt \$n2 ] & $n1 > n2$\\
+ \hline
+  if [ \$n1 -le \$n2 ] & $n1 <= n2$\\
+ \hline
+  if [ \$n1 -ge \$n2 ] & $n1 >= n2$\\
  \hline
 \end{tabular}
+
+\medskip
+
+\begin{tabular}{ |p{4cm}||p{4cm}| }
+ \hline
+ \multicolumn{2}{|c|}{Tests sur les chaines de caractères} \\
+ \hline
+  Options & Signification \\
+ \hline
+  if [ -z \$string ] & string est vide\\
+ \hline
+  if [ \$string1 = \$string2 ] & string1 est identique a string2\\
+ \hline
+  if [ \$string1 != \$string2 ] & string n'est pas identique a string2\\
+ \hline
+\end{tabular}
+
+\subsection{Les Boucles}
+
+Pour faire des boucles dans bash, on peut faire comme dans python, soit un while, soit un for :
+
+Les boucles while :
+
+\begin{minted}{bash}
+i=0
+while [ \$i -le 5 ] #On peut evidemment mettre n'importe quelle condition booléene entre les []
+do
+    echo "\$i"
+    i=\$(expr \$i + 1)
+done
+\end{minted}
+
+Les boucles for :
+
+\begin{minted}{bash}
+for i in \{0\.\.5\}
+do
+  echo "\$i"
+done
+\end{minted}
+
+Pour, c'est deux exécutions de code, on obtiendra donc :
+
+\begin{lstlisting}
+0
+1
+2
+3
+4
+5
+\end{lstlisting}
+
+ATTENTION DANS L'EXEMPLE DE LA BOUCLE FOR AU-DESSUS ON NE PEUT PAS REMPLACER 5 PAR UNE VARIABLE POUR REMPLACER PAR UNE VARIABLE ON FERRA CECI :
+
+\begin{minted}{bash}
+x=5
+for i in \$(seq \$x) #Créer une séquence de 1 a 5
+do
+    echo "\$i"
+done
+\end{minted}
+
+Sinon, on ferra un while.
+Les boucles for, mais en mieux
+
+Avec la version 4.0 de Bash, on peut faire des trucs plus propre genre :
+
+\begin{minted}{bash}
+#!/bin/bash
+for i in {0..10..2} #{départ..arrivé..incrémentation}
+do
+  echo "\$i"
+done
+\end{minted}
+
+\subsection{Parcourir les arguments}
+
+\begin{minted}{bash}
+for i in "\$@" #Permet de parcourir les arguments en entrées.
+do
+    echo "\$i"
+done
+\end{minted}
+
+./parcours\_arguments.sh Salut toi, tu es très beau
+
+\begin{lstlisting}
+Salut
+toi
+tu
+es
+tres
+beau
+\end{lstlisting}
+
+\subsection{Lire un fichier}
+
+On peut aussi lire toutes les lignes d'un texte :
+
+\begin{minted}{bash}
+while read ligne
+do
+    echo "\$ligne"
+done < "Harry_Potter.txt"
+\end{minted}
+
+À faire : Ajouter une manière alternative
+
+\begin{lstlisting}
+Harry Potter and the Sorcerer's Stone
+
+CHAPTER ONE
+
+THE BOY WHO LIVED
+
+Mr. and Mrs. Dursley, of number four, Privet Drive, were proud to say
+that they were perfectly normal, thank you very much. They were the last
+people you'd expect to be involved in anything strange or mysterious,
+because they just didn't hold with such nonsense.
+\end{lstlisting}
 
 \section{TP5 : Les processus}
 
