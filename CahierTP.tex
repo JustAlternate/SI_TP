@@ -417,8 +417,6 @@ do
 done < "Harry_Potter.txt"
 \end{minted}
 
-À faire : Ajouter une manière alternative
-
 \begin{lstlisting}
 Harry Potter and the Sorcerer's Stone
 
@@ -445,6 +443,8 @@ because they just didn't hold with such nonsense.
   kill -sig pid # Envoie un signal à un processus
 \end{minted}
 
+On peut envoyer des signaux a des processus :
+
 \begin{minted}{bash}
   SIGHUP  (1)   # Communication interrompue involontairement
   SIGINT  (2)   # Interruption du processus
@@ -459,4 +459,58 @@ because they just didn't hold with such nonsense.
   SIGSTP  (20)  # Mettre en tâche de fond
 \end{minted}
 
+Chaque processus a un "State" qui représente son état et qui peut être :
+
+\medskip
+
+\begin{tabular}{ |p{4cm}||p{4cm}| }
+ \hline
+  \multicolumn{2}{|c|}{State code et définition} \\
+ \hline
+  Code & Signification \\
+ \hline
+  D & sommeil non interruptible \\
+ \hline
+  I & Thread du kernel en attente \\
+ \hline
+  R & En cours / Actif \\
+ \hline
+  S & sommeil interruptible \\
+  \hline 
+  T & Arrêté par un signal \\
+  \hline 
+  X & Mort \\
+  \hline
+  Z & En train de mourir (zombie) \\
+  \hline
+\end{tabular}
+
+La commande "nice" permet de changer la priorité de traitement d'un processus.
+
+La commande "trap" permet de faire une action quand un certain processus reçoit un signal en particulier
+
+\begin{minted}{bash}
+#/bin/bash
+trap "echo Vous avez fait ctrl + c bravo !; exit" SIGINT
+
+while true; do
+	echo 'Faites ctrl + c'
+	sleep 1
+done
+\end{minted}
+
+
+
+
+
+
+
+
+
+
 \end{document}
+
+
+
+
+
